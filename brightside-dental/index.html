@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brightside Dental Studio — Gentle Family Dentist in Austin, TX</title>
+<meta name="description" content="New patient exam, X-rays and cleaning for $99. Evening and Saturday appointments. Most insurance accepted.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d2a2a;--muted:#5f6e6c;--bg:#fbf8f3;--card:#fff;--brand:#2f7d6d;--brand-soft:#dcefe9;--blush:#f4ded2;--line:#e8e1d6;--r:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.01em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
+.logo{font-family:Fraunces,serif;font-size:22px;font-weight:600}
+.logo i{font-style:normal;color:var(--brand)}
+.btn{display:inline-block;padding:14px 24px;border-radius:99px;font-weight:600;text-decoration:none;font-size:15px}
+.btn-main{background:var(--brand);color:#fff}
+.btn-line{border:1.5px solid var(--ink);color:var(--ink)}
+.hero{padding:40px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+h1{font-size:clamp(36px,5vw,58px);line-height:1.05;margin-bottom:20px}
+h1 span{color:var(--brand);font-style:italic}
+.lead{font-size:18px;color:var(--muted);margin-bottom:28px}
+.offer{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;display:flex;gap:18px;align-items:center;margin-bottom:28px}
+.offer .big{font-family:Fraunces,serif;font-size:40px;color:var(--brand);line-height:1}
+.offer p{font-size:15px;color:var(--muted)}
+.offer b{color:var(--ink)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.visual{aspect-ratio:4/5;border-radius:200px 200px var(--r) var(--r);background:radial-gradient(circle at 30% 30%,var(--blush),transparent 60%),linear-gradient(160deg,var(--brand-soft),#cfe5de);position:relative;overflow:hidden}
+.visual .smile{position:absolute;inset:auto 12% 18% 12%;height:38%;border-bottom:10px solid #fff;border-radius:0 0 50% 50%;opacity:.9}
+.badge{position:absolute;background:#fff;border-radius:16px;padding:12px 16px;font-size:14px;box-shadow:0 12px 30px -12px rgba(0,0,0,.2)}
+.badge b{display:block;font-size:18px}
+.b1{top:14%;left:6%}.b2{bottom:10%;right:6%}
+section{padding:80px 0}
+.center{text-align:center;max-width:640px;margin:0 auto 48px}
+h2{font-size:clamp(28px,3.6vw,42px);margin-bottom:12px}
+.center p{color:var(--muted)}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.why h3{font-size:19px;margin:10px 0 6px}
+.why p{font-size:15px;color:var(--muted)}
+.why .ic{font-size:26px}
+.band{background:var(--brand);color:#fff;border-radius:32px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.band p{color:#d5ebe5}
+.band ul{list-style:none}
+.band li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.doc{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.doc .ph{aspect-ratio:1;background:linear-gradient(135deg,var(--blush),var(--brand-soft))}
+.doc div{padding:18px}
+.doc small{color:var(--muted)}
+.quote{max-width:760px;margin:0 auto;text-align:center}
+.quote blockquote{font-family:Fraunces,serif;font-size:clamp(22px,3vw,30px);line-height:1.35;margin-bottom:16px}
+.quote cite{color:var(--muted);font-style:normal}
+.final{text-align:center;background:var(--blush);border-radius:32px;padding:64px 24px}
+.final p{color:var(--muted);margin:0 auto 28px;max-width:520px}
+footer{padding:40px 0;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:860px){
+ .hero .wrap,.band{grid-template-columns:1fr}
+ .why{grid-template-columns:1fr 1fr}
+ .team{grid-template-columns:1fr}
+ .visual{max-width:360px;margin:0 auto;width:100%}
+ .band{padding:32px 24px}
+ header .btn{display:none}
+}
+@media (max-width:520px){.why{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo">Brightside <i>Dental</i></div><a class="btn btn-main" href="#book">Book a visit</a></div></header>
+
+<section class="hero"><div class="wrap">
+ <div>
+  <h1>A dentist you'll <span>actually</span> look forward to.</h1>
+  <p class="lead">Gentle care for the whole family in South Austin. Noise-cancelling headphones, warm blankets, and a team that explains everything before we start.</p>
+  <div class="offer"><div class="big">$99</div><p><b>New patient special:</b> full exam, digital X-rays and professional cleaning. Normally $285.</p></div>
+  <div class="cta"><a class="btn btn-main" href="#book">Claim the $99 visit</a><a class="btn btn-line" href="tel:+15125550178">(512) 555-0178</a></div>
+ </div>
+ <div class="visual" aria-hidden="true"><div class="smile"></div>
+  <div class="badge b1"><b>4.9 ★</b>380+ reviews</div>
+  <div class="badge b2"><b>Open Saturdays</b>&amp; till 7pm weekdays</div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="center"><h2>Why nervous patients choose us</h2><p>Over half of our patients told us they'd put off the dentist for years. Here's what changed their mind.</p></div>
+ <div class="why">
+  <div><div class="ic">🎧</div><h3>Comfort menu</h3><p>Headphones, blankets, and numbing gel before every injection.</p></div>
+  <div><div class="ic">💬</div><h3>No lectures</h3><p>We explain your options in plain English and never judge.</p></div>
+  <div><div class="ic">🕒</div><h3>On-time visits</h3><p>Average wait in our lobby: under 6 minutes.</p></div>
+  <div><div class="ic">💳</div><h3>Clear pricing</h3><p>Written estimate before treatment. 0% financing available.</p></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="band">
+  <div><h2>Insurance? Probably covered.</h2><p>We're in-network with most major PPO plans and file your claim for you. No insurance? Our membership plan covers two cleanings, exams and X-rays for $29/month.</p></div>
+  <ul><li>Delta Dental<span>✓</span></li><li>Cigna<span>✓</span></li><li>MetLife<span>✓</span></li><li>Aetna<span>✓</span></li><li>Guardian<span>✓</span></li></ul>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="center"><h2>Meet the team</h2><p>Placeholder photos for this concept.</p></div>
+ <div class="team">
+  <div class="doc"><div class="ph"></div><div><h3>Dr. Maya Ortiz, DDS</h3><small>Family &amp; cosmetic dentistry</small></div></div>
+  <div class="doc"><div class="ph"></div><div><h3>Dr. Sam Lee, DMD</h3><small>Implants &amp; restorative</small></div></div>
+  <div class="doc"><div class="ph"></div><div><h3>Priya, RDH</h3><small>Lead hygienist</small></div></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="quote">
+ <blockquote>“I hadn't been to a dentist in eight years. They didn't make me feel bad once — I've already booked my family.”</blockquote>
+ <cite>— Sample review, concept page</cite>
+</div></section>
+
+<section id="book" style="padding-top:0"><div class="wrap"><div class="final">
+ <h2>Your $99 first visit is one click away</h2>
+ <p>Pick a time online in under a minute. Evening and Saturday slots fill up first.</p>
+ <a class="btn btn-main" href="#book">See available times</a>
+</div></div></section>
+
+<footer>Brightside Dental Studio · South Austin, TX · Concept design (fictional business)</footer>
+</body>
+</html>

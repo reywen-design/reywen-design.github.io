@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northline Plumbing & Heating — 24/7 Plumbers in Columbus, OH</title>
+<meta name="description" content="Licensed Columbus plumbers. Upfront flat-rate pricing, 60-minute emergency arrival, 2-year workmanship guarantee.">
+<style>
+:root{--ink:#0f1c2e;--muted:#5a6b80;--bg:#ffffff;--soft:#f3f6fa;--brand:#0b5fff;--accent:#ff7a1a;--line:#e3e9f1;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.top{background:var(--ink);color:#fff;font-size:14px;text-align:center;padding:8px 16px}
+.top b{color:var(--accent)}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.02em;display:flex;gap:10px;align-items:center}
+.logo span{width:34px;height:34px;border-radius:9px;background:var(--brand);display:grid;place-items:center;color:#fff;font-size:18px}
+nav a{margin-left:24px;text-decoration:none;color:var(--muted);font-weight:500}
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.hero{background:linear-gradient(180deg,var(--soft),#fff);padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.pill{display:inline-block;background:#e6efff;color:var(--brand);font-weight:700;font-size:13px;padding:6px 12px;border-radius:99px;margin-bottom:18px}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.08;letter-spacing:-.03em;margin-bottom:18px}
+h1 em{font-style:normal;color:var(--brand)}
+.lead{font-size:19px;color:var(--muted);margin-bottom:28px;max-width:560px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.proof{display:flex;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.proof b{display:block;color:var(--ink);font-size:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:0 20px 40px -24px rgba(15,28,46,.25)}
+.card h3{font-size:20px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:14px;margin-bottom:18px}
+label{display:block;font-size:13px;font-weight:600;margin:12px 0 6px}
+input,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:9px;font:inherit}
+.card .btn{width:100%;margin-top:18px}
+.small{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
+section{padding:72px 0}
+h2{font-size:clamp(26px,3.5vw,38px);letter-spacing:-.02em;margin-bottom:12px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:40px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.svc .ic{font-size:26px;margin-bottom:12px}
+.svc h3{font-size:18px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:15px}
+.svc .price{margin-top:14px;font-weight:700;color:var(--brand)}
+.soft{background:var(--soft)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:#fff;border-radius:var(--r);padding:24px}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;font-weight:800;margin-bottom:14px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.stars{color:#f5a400;letter-spacing:2px;margin-bottom:10px}
+.rev p{margin-bottom:14px}
+.rev small{color:var(--muted)}
+.guarantee{background:var(--ink);color:#fff;border-radius:20px;padding:48px;display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center}
+.guarantee .seal{width:96px;height:96px;border-radius:50%;border:3px solid var(--accent);display:grid;place-items:center;font-weight:800;text-align:center;font-size:13px;line-height:1.2}
+.guarantee p{color:#c3cede}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:700;cursor:pointer;font-size:17px}
+details p{color:var(--muted);margin-top:10px}
+footer{background:var(--soft);padding:32px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.mobile-call{display:none}
+@media (max-width:860px){
+ .hero .wrap,.grid3,.steps,.reviews{grid-template-columns:1fr}
+ .guarantee{grid-template-columns:1fr;text-align:center;justify-items:center;padding:32px 20px}
+ nav{display:none}
+ .mobile-call{display:block;position:fixed;bottom:0;left:0;right:0;padding:12px 16px;background:#fff;border-top:1px solid var(--line);z-index:20}
+ .mobile-call .btn{width:100%;text-align:center}
+ body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+<div class="top">Burst pipe or no hot water? <b>A plumber can be at your door in 60 minutes</b> — day or night.</div>
+<header><div class="wrap">
+ <div class="logo"><span>N</span>Northline</div>
+ <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></nav>
+ <a class="btn btn-accent" href="tel:+16145550142">(614) 555-0142</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+ <div>
+  <div class="pill">Licensed &amp; insured · Columbus, OH</div>
+  <h1>The plumber who shows up <em>on time</em> — and tells you the price first.</h1>
+  <p class="lead">Flat-rate quotes before any work starts. No overtime fees on nights or weekends. Every repair covered for two full years.</p>
+  <div class="cta">
+   <a class="btn btn-accent" href="tel:+16145550142">Call now — 24/7</a>
+   <a class="btn btn-ghost" href="#book">Book online</a>
+  </div>
+  <div class="proof">
+   <div><b>4.9★</b>612 Google reviews</div>
+   <div><b>60 min</b>avg. emergency arrival</div>
+   <div><b>18 yrs</b>serving Central Ohio</div>
+  </div>
+ </div>
+ <form class="card" id="book" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks — we will call you within 15 min';">
+  <h3>Get a flat-rate quote</h3>
+  <p>Tell us what's wrong. We'll call back within 15 minutes with a price.</p>
+  <label for="n">Your name</label><input id="n" required placeholder="Jane Smith">
+  <label for="p">Phone</label><input id="p" type="tel" required placeholder="(614) 555-0100">
+  <label for="i">What's the issue?</label>
+  <select id="i"><option>Leak or burst pipe</option><option>Water heater</option><option>Clogged drain</option><option>Toilet / faucet</option><option>Something else</option></select>
+  <button class="btn btn-accent">Get my price</button>
+  <div class="small">No spam. No obligation.</div>
+ </form>
+</div></section>
+
+<section id="services"><div class="wrap">
+ <h2>What we fix, every day</h2>
+ <p class="sub">Most jobs are done on the first visit. Our vans carry 1,400+ parts so we don't leave you waiting for a second trip.</p>
+ <div class="grid3" id="pricing">
+  <div class="svc"><div class="ic">💧</div><h3>Leaks &amp; burst pipes</h3><p>Fast shut-off, leak detection without tearing up walls, permanent repair.</p><div class="price">From $149</div></div>
+  <div class="svc"><div class="ic">🔥</div><h3>Water heaters</h3><p>Repair or same-day replacement of tank and tankless units. Haul-away included.</p><div class="price">Repairs from $189</div></div>
+  <div class="svc"><div class="ic">🚿</div><h3>Drain cleaning</h3><p>Kitchen, bath and main-line clogs cleared with camera inspection on request.</p><div class="price">From $119</div></div>
+ </div>
+</div></section>
+
+<section class="soft"><div class="wrap">
+ <h2>How it works</h2>
+ <p class="sub">Three steps, no surprises.</p>
+ <div class="steps">
+  <div class="step"><h3>Call or book</h3><p>A real person answers 24/7 and gives you an arrival window, not a guess.</p></div>
+  <div class="step"><h3>Approve your price</h3><p>Your plumber diagnoses the problem and quotes a flat rate. You decide before any work starts.</p></div>
+  <div class="step"><h3>Fixed &amp; guaranteed</h3><p>We clean up, test everything, and back the repair for 2 years.</p></div>
+ </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+ <h2>Columbus homeowners say it best</h2>
+ <p class="sub">Sample reviews for this concept page.</p>
+ <div class="reviews">
+  <div class="rev"><div class="stars">★★★★★</div><p>“Water heater died on a Sunday night. They were here in 50 minutes and it was replaced by 11pm. Price was exactly what they quoted.”</p><small>— Homeowner, Clintonville</small></div>
+  <div class="rev"><div class="stars">★★★★★</div><p>“First plumber who actually explained the options instead of upselling. Booties on, cleaned up after.”</p><small>— Homeowner, Westerville</small></div>
+  <div class="rev"><div class="stars">★★★★★</div><p>“Called three companies. Northline was the only one that gave a price on the phone. Will use again.”</p><small>— Landlord, German Village</small></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="guarantee">
+  <div class="seal">2-YEAR<br>GUARANTEE</div>
+  <div><h2 style="color:#fff">If it breaks again, we come back free.</h2><p>Every repair is covered for 24 months — parts and labor. If you're not happy with the work, we'll make it right or refund the job.</p></div>
+  <a class="btn btn-accent" href="tel:+16145550142">Call (614) 555-0142</a>
+ </div>
+</div></section>
+
+<section id="faq" class="soft"><div class="wrap" style="max-width:780px">
+ <h2>Questions</h2>
+ <details><summary>Do you charge extra at night or on weekends?</summary><p>No. Same flat rate 24/7, including holidays.</p></details>
+ <details><summary>Is there a call-out fee?</summary><p>The $49 diagnostic fee is waived if you go ahead with the repair.</p></details>
+ <details><summary>What areas do you serve?</summary><p>Columbus and all suburbs within 25 miles, including Dublin, Westerville, Grove City and Reynoldsburg.</p></details>
+ <details><summary>Are your plumbers licensed?</summary><p>Yes — every technician is state-licensed, background-checked and insured.</p></details>
+</div></section>
+
+<footer><div class="wrap"><div>© Northline Plumbing &amp; Heating · Concept design (fictional business)</div><div>Columbus, OH · (614) 555-0142</div></div></footer>
+<div class="mobile-call"><a class="btn btn-accent" href="tel:+16145550142">📞 Call now — plumber in 60 min</a></div>
+</body>
+</html>

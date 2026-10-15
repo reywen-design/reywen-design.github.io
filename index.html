@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landing Page Portfolio — Conversion-focused copy + design</title>
+<meta name="description" content="High-converting landing pages for local businesses and startups: copy, design and build, delivered in 5 days.">
+<style>
+:root{--ink:#14171f;--muted:#636b7a;--bg:#fafaf8;--line:#e6e6e1;--brand:#ff5a36}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 40px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.08;letter-spacing:-.03em;max-width:780px;margin-bottom:18px}
+h1 span{color:var(--brand)}
+.lead{font-size:19px;color:var(--muted);max-width:640px;margin-bottom:28px}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chips span{border:1px solid var(--line);background:#fff;border-radius:99px;padding:6px 14px;font-size:14px}
+h2{font-size:28px;letter-spacing:-.02em;margin:56px 0 20px}
+.work{display:grid;gap:24px}
+.item{display:grid;grid-template-columns:1.3fr 1fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .15s}
+.item:hover{transform:translateY(-3px)}
+.item iframe{width:100%;height:340px;border:0;pointer-events:none;border-right:1px solid var(--line)}
+.item .txt{padding:28px}
+.item small{color:var(--brand);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px}
+.item h3{font-size:22px;margin:6px 0 10px}
+.item p{color:var(--muted);font-size:15px;margin-bottom:12px}
+.item ul{padding-left:18px;color:var(--muted);font-size:14px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.process div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.process b{display:block;margin-bottom:4px}
+.process p{color:var(--muted);font-size:14px}
+.contact{margin:56px 0 72px;background:var(--ink);color:#fff;border-radius:22px;padding:44px}
+.contact p{color:#b9bfcc;margin:8px 0 22px}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none}
+@media (max-width:820px){.item{grid-template-columns:1fr}.item iframe{border-right:0;border-bottom:1px solid var(--line);height:260px}.process{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <h1>Landing pages that turn visitors into <span>calls, bookings and sign-ups</span>.</h1>
+ <p class="lead">I write the copy, design the page and build it — fast, mobile-first and ready to publish. One person, one deadline, no agency overhead.</p>
+ <div class="chips"><span>Conversion copywriting</span><span>Responsive design</span><span>HTML / Webflow / WordPress</span><span>Delivered in 5 days</span></div>
+</header>
+
+<h2>Selected work</h2>
+<p style="color:var(--muted);margin-top:-12px;margin-bottom:20px;font-size:14px">Concept projects for fictional brands, built to show range across local services, healthcare and SaaS.</p>
+<div class="work">
+ <a class="item" href="northline-plumbing/index.html">
+  <iframe src="northline-plumbing/index.html" loading="lazy" title="Northline preview" tabindex="-1"></iframe>
+  <div class="txt"><small>Local services</small><h3>Northline Plumbing &amp; Heating</h3><p>Emergency-plumber page built around one goal: get the phone to ring.</p><ul><li>Sticky click-to-call bar on mobile</li><li>Price-first messaging to beat "how much?" anxiety</li><li>2-year guarantee as the risk reverser</li></ul></div>
+ </a>
+ <a class="item" href="brightside-dental/index.html">
+  <iframe src="brightside-dental/index.html" loading="lazy" title="Brightside preview" tabindex="-1"></iframe>
+  <div class="txt"><small>Healthcare</small><h3>Brightside Dental Studio</h3><p>New-patient offer page aimed at people who've avoided the dentist for years.</p><ul><li>$99 entry offer with anchor price</li><li>Copy that addresses fear, not features</li><li>Insurance objection handled up front</li></ul></div>
+ </a>
+ <a class="item" href="paylane/index.html">
+  <iframe src="paylane/index.html" loading="lazy" title="Paylane preview" tabindex="-1"></iframe>
+  <div class="txt"><small>SaaS</small><h3>Paylane</h3><p>Sign-up page for an invoicing tool for freelancers.</p><ul><li>Outcome headline instead of feature list</li><li>Live-looking product preview in the hero</li><li>Three-tier pricing with a clear default</li></ul></div>
+ </a>
+</div>
+
+<h2>How it works</h2>
+<div class="process">
+ <div><b>1. Short brief</b><p>10 questions about your offer and customers. 15 minutes of your time.</p></div>
+ <div><b>2. Copy first</b><p>You approve the words before any design, so nothing gets redone.</p></div>
+ <div><b>3. Design + build</b><p>Mobile-first page, fast loading, ready for your domain.</p></div>
+ <div><b>4. Launch</b><p>I publish it or hand over clean files. Two rounds of edits included.</p></div>
+</div>
+
+<div class="contact">
+ <h2 style="margin:0">Want one for your business?</h2>
+ <p>Send me your current website. I'll reply with three specific things I'd change — free, no strings.</p>
+ <a class="btn" href="#">Get a free page review</a>
+</div>
+</div>
+</body>
+</html>

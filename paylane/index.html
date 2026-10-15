@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paylane — Get paid on time, without the awkward follow-ups</title>
+<meta name="description" content="Paylane sends invoices, chases late payments for you, and gets freelancers paid 11 days faster on average.">
+<style>
+:root{--bg:#0c0d12;--panel:#14161e;--line:#262a36;--ink:#eef0f6;--muted:#9aa1b4;--brand:#7c5cff;--brand2:#22d3a6;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font-weight:800;font-size:20px;display:flex;gap:8px;align-items:center}
+.logo:before{content:"";width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+nav a{color:var(--muted);text-decoration:none;margin-left:24px;font-size:15px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:15px}
+.btn-main{background:var(--brand);color:#fff;box-shadow:0 10px 30px -10px var(--brand)}
+.btn-sec{border:1px solid var(--line);color:var(--ink)}
+.hero{text-align:center;padding:80px 0 40px;background:radial-gradient(600px 300px at 50% 0,rgba(124,92,255,.25),transparent)}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:13px;color:var(--muted);margin-bottom:22px}
+.tag b{color:var(--brand2)}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.04;letter-spacing:-.035em;max-width:880px;margin:0 auto 20px}
+h1 span{background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:19px;color:var(--muted);max-width:620px;margin:0 auto 32px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+.app{max-width:900px;margin:56px auto 0;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px;text-align:left}
+.app .bar{display:flex;gap:6px;margin-bottom:16px}
+.app .bar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.rows{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:1.4fr 1fr 1fr .9fr;gap:12px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:12px;font-size:14px}
+.row .amt{font-weight:700}
+.st{font-size:12px;font-weight:700;padding:4px 10px;border-radius:99px;justify-self:start}
+.paid{background:rgba(34,211,166,.15);color:var(--brand2)}
+.chase{background:rgba(124,92,255,.18);color:#b7a6ff}
+.due{background:rgba(255,184,77,.15);color:#ffc266}
+.muted{color:var(--muted)}
+section{padding:88px 0}
+.logos{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;color:#4b5164;font-weight:800;font-size:18px;padding:24px 0 0}
+h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.03em;margin-bottom:12px}
+.center{text-align:center;max-width:640px;margin:0 auto 48px}
+.center p{color:var(--muted)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat div{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.feat h3{margin:12px 0 6px;font-size:18px}
+.feat p{color:var(--muted);font-size:15px}
+.feat .ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:rgba(124,92,255,.15);font-size:20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center}
+.stats b{display:block;font-size:48px;letter-spacing:-.03em;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stats span{color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+.plan{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.plan.pop{border-color:var(--brand);box-shadow:0 0 0 1px var(--brand),0 30px 60px -30px var(--brand)}
+.plan .p{font-size:40px;font-weight:800;letter-spacing:-.03em;margin:8px 0}
+.plan .p small{font-size:15px;color:var(--muted);font-weight:500}
+.plan ul{list-style:none;margin:18px 0 24px}
+.plan li{padding:6px 0;color:var(--muted);font-size:15px}
+.plan li:before{content:"✓  ";color:var(--brand2)}
+.plan .btn{width:100%;text-align:center}
+.final{text-align:center;border:1px solid var(--line);border-radius:28px;padding:64px 24px;background:radial-gradient(500px 240px at 50% 100%,rgba(34,211,166,.15),transparent),var(--panel)}
+.final p{color:var(--muted);margin-bottom:28px}
+footer{padding:36px 0;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:860px){
+ .feat,.stats,.plans{grid-template-columns:1fr}
+ nav{display:none}
+ .row{grid-template-columns:1fr 1fr}
+ .row .muted:nth-child(2){display:none}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo">Paylane</div><nav><a href="#features">Features</a><a href="#pricing">Pricing</a></nav><a class="btn btn-sec" href="#start">Start free</a></div></header>
+
+<section class="hero" style="padding-bottom:40px"><div class="wrap">
+ <div class="tag"><b>New:</b> automatic late-fee reminders</div>
+ <h1>Get paid on time. <span>Without chasing anyone.</span></h1>
+ <p class="lead">Paylane sends your invoices, follows up politely when they're late, and lets clients pay in one click. You get back to the actual work.</p>
+ <div class="cta"><a class="btn btn-main" href="#start">Send your first invoice free</a><a class="btn btn-sec" href="#features">See how it works</a></div>
+ <div class="note">No credit card · Set up in 3 minutes</div>
+ <div class="app" aria-label="Product preview">
+  <div class="bar"><i></i><i></i><i></i></div>
+  <div class="rows">
+   <div class="row"><span>Studio Kale — Brand refresh</span><span class="muted">Sent Oct 2</span><span class="amt">$4,800</span><span class="st paid">Paid</span></div>
+   <div class="row"><span>Moss &amp; Co — Website copy</span><span class="muted">Reminder 2 sent</span><span class="amt">$1,250</span><span class="st chase">Auto-chasing</span></div>
+   <div class="row"><span>Fieldnote — Retainer Oct</span><span class="muted">Due in 3 days</span><span class="amt">$2,000</span><span class="st due">Due soon</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+ <div class="stats">
+  <div><b>11 days</b><span>faster payment, on average</span></div>
+  <div><b>0</b><span>awkward "just checking in" emails</span></div>
+  <div><b>3 min</b><span>from sign-up to first invoice</span></div>
+ </div>
+</div></section>
+
+<section id="features"><div class="wrap">
+ <div class="center"><h2>Everything between "done" and "paid"</h2><p>Built for freelancers and small studios who'd rather not become part-time debt collectors.</p></div>
+ <div class="feat">
+  <div><div class="ic">⚡</div><h3>Invoices in seconds</h3><p>Turn a project into a branded invoice with one click. Recurring retainers send themselves.</p></div>
+  <div><div class="ic">🤝</div><h3>Polite auto-reminders</h3><p>Friendly nudges before and after the due date, written to keep the relationship warm.</p></div>
+  <div><div class="ic">💳</div><h3>One-click pay</h3><p>Clients pay by card, bank transfer, Apple Pay or Google Pay — no account needed.</p></div>
+  <div><div class="ic">🌍</div><h3>Any currency</h3><p>Bill in 30+ currencies and see everything in yours.</p></div>
+  <div><div class="ic">📊</div><h3>Cash-flow view</h3><p>Know what's coming in this month before you take on the next project.</p></div>
+  <div><div class="ic">🧾</div><h3>Tax-ready exports</h3><p>Hand your accountant a clean CSV at year end instead of a shoebox.</p></div>
+ </div>
+</div></section>
+
+<section id="pricing" style="padding-top:0"><div class="wrap">
+ <div class="center"><h2>Simple pricing</h2><p>Start free. Upgrade when Paylane is already paying for itself.</p></div>
+ <div class="plans">
+  <div class="plan"><h3>Starter</h3><div class="p">$0</div><p class="muted">For your first clients</p><ul><li>5 invoices / month</li><li>Card &amp; bank payments</li><li>1 reminder per invoice</li></ul><a class="btn btn-sec" href="#start">Start free</a></div>
+  <div class="plan pop"><h3>Pro</h3><div class="p">$12 <small>/ month</small></div><p class="muted">For full-time freelancers</p><ul><li>Unlimited invoices</li><li>Unlimited auto-reminders</li><li>Recurring retainers</li><li>Your logo &amp; domain</li></ul><a class="btn btn-main" href="#start">Try Pro free for 14 days</a></div>
+  <div class="plan"><h3>Studio</h3><div class="p">$29 <small>/ month</small></div><p class="muted">For small teams</p><ul><li>Everything in Pro</li><li>Up to 5 team members</li><li>Client portal</li><li>Priority support</li></ul><a class="btn btn-sec" href="#start">Start free</a></div>
+ </div>
+</div></section>
+
+<section id="start" style="padding-top:0"><div class="wrap"><div class="final">
+ <h2>Your next invoice could chase itself.</h2>
+ <p>Join freelancers who stopped sending "friendly reminder" emails.</p>
+ <a class="btn btn-main" href="#start">Get started — it's free</a>
+</div></div></section>
+
+<footer>Paylane · Concept design (fictional product)</footer>
+</body>
+</html>
