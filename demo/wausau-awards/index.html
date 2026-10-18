@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Wausau Awards &amp; Engraving — plaques and recognition since 1977 (concept)</title>
+<meta name="description" content="Concept redesign by Reywen Design. Not the official Wausau Awards & Engraving website.">
+<style>
+:root{--navy:#14275a;--navy2:#0d1b40;--ink:#1b2233;--muted:#5e6678;--paper:#faf8f4;--line:#e7e2d8;--bronze1:#b8864b;--bronze2:#e2b97f;--bronze3:#7d5427;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.concept{background:var(--navy2);color:#c3cbe0;font-size:13px;text-align:center;padding:9px 16px}
+.concept a{color:var(--bronze2)}
+header{position:sticky;top:0;z-index:20;background:rgba(250,248,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{text-decoration:none;line-height:1}
+.logo b{font-family:Georgia,serif;font-size:24px;color:var(--navy);letter-spacing:.02em}
+.logo small{display:block;font-size:11px;letter-spacing:.3em;color:var(--bronze3);margin-top:4px;text-transform:uppercase}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s ease,box-shadow .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-n{background:var(--navy);color:#fff}
+.btn-n:hover{box-shadow:0 10px 24px -10px rgba(20,39,90,.7)}
+.btn-l{border:1px solid #cfc6b4;color:var(--navy);background:#fff}
+.hero{padding:76px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.kicker{display:block;color:var(--bronze3);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:16px}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(36px,5.2vw,58px);line-height:1.08;letter-spacing:-.015em;color:var(--navy);margin-bottom:20px}
+h1 em{font-style:italic;color:var(--bronze3)}
+.lead{font-size:19px;color:var(--muted);max-width:540px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.facts{display:flex;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.facts b{display:block;color:var(--navy);font-size:22px;font-family:Georgia,serif}
+/* CSS-made cast bronze plaque */
+.plaque{aspect-ratio:4/3;border-radius:12px;padding:16px;background:linear-gradient(145deg,var(--bronze2),var(--bronze1) 45%,var(--bronze3));box-shadow:0 30px 60px -28px rgba(60,35,10,.65),inset 0 2px 0 rgba(255,255,255,.35);transform:rotate(-2deg)}
+.plaque .face{height:100%;border-radius:6px;border:3px solid rgba(70,40,10,.55);box-shadow:inset 0 0 0 6px rgba(255,230,190,.25);background:radial-gradient(120% 90% at 30% 20%,#7a5126,#4a2f12);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;color:#f1cf98;text-shadow:0 1px 0 rgba(0,0,0,.45),0 -1px 0 rgba(255,220,170,.35)}
+.plaque .face small{letter-spacing:.3em;font-size:12px;text-transform:uppercase;opacity:.85}
+.plaque .face b{font-family:Georgia,serif;font-size:clamp(22px,3vw,32px);font-weight:400;margin:10px 0 8px;line-height:1.2}
+.plaque .face span{font-size:14px;opacity:.85}
+.plaque .face .rule{width:60%;height:2px;background:currentColor;opacity:.5;margin:12px 0}
+section{padding:76px 0}
+h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);letter-spacing:-.01em;line-height:1.15;color:var(--navy);margin-bottom:12px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:40px;font-size:17px}
+.white{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--paper);transition:transform .2s ease,box-shadow .2s ease}
+.prod:hover{transform:translateY(-4px);box-shadow:0 18px 36px -24px rgba(20,39,90,.45)}
+.sw{height:120px;display:grid;place-items:center}
+.sw i{font-style:normal;font-family:Georgia,serif;font-size:15px;letter-spacing:.2em;text-transform:uppercase;padding:10px 18px;border-radius:4px}
+.sw.bronze{background:linear-gradient(135deg,#e2b97f,#9c6a35)}.sw.bronze i{color:#4a2f12;border:2px solid rgba(74,47,18,.5)}
+.sw.steel{background:linear-gradient(135deg,#eef1f4,#a9b1bb)}.sw.steel i{color:#3d4652;border:2px solid rgba(61,70,82,.4)}
+.sw.tree{background:linear-gradient(135deg,#3f6b4a,#1f3a28)}.sw.tree i{color:#e8d9a8;border:2px solid rgba(232,217,168,.5)}
+.sw.wood{background:repeating-linear-gradient(100deg,#9a5a32 0 10px,#8a4e2a 10px 16px,#a3653b 16px 28px)}.sw.wood i{color:#2c160a;background:rgba(255,235,210,.35)}
+.sw.stone{background:linear-gradient(135deg,#5a6559,#323a33)}.sw.stone i{color:#e6e9e3;border:2px solid rgba(230,233,227,.4)}
+.sw.granite{background:radial-gradient(circle at 30% 30%,#3a3a3a,#111)}.sw.granite i{color:#d9d9d9;border:1px solid #777}
+.prod .tx{padding:20px}
+.prod h3{font-size:18px;color:var(--navy);margin-bottom:4px}
+.prod p{font-size:15px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;font-family:Georgia,serif;font-size:18px;margin-bottom:14px}
+.step h3{font-size:19px;color:var(--navy);margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+.ship{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ship ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.ship li{border:1px solid #cfc6b4;border-radius:99px;padding:6px 14px;font-size:14px;color:var(--navy);background:#fff}
+.quote{font-family:Georgia,serif;font-size:21px;line-height:1.5;color:var(--navy);border-left:3px solid var(--bronze1);padding-left:20px}
+.quote small{display:block;font-family:"Segoe UI",system-ui,sans-serif;font-size:14px;color:var(--muted);margin-top:10px}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--navy);color:#fff;border-radius:20px;padding:34px}
+.card h3{font-family:Georgia,serif;font-weight:400;font-size:28px;margin-bottom:6px}
+.card address{font-style:normal;color:#c3cbe0;margin-bottom:20px}
+.card .row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.card .row span:last-child{color:#c3cbe0}
+.card .cta{margin:24px 0 0}
+.card .btn-l{background:transparent;color:#fff;border-color:rgba(255,255,255,.35);overflow-wrap:anywhere}
+.visit>*{min-width:0}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:340px}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{background:var(--navy2);color:#8d97b3;padding:32px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media (max-width:900px){
+  .hero .wrap,.ship,.visit{grid-template-columns:1fr}
+  .prods{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  nav,header .btn{display:none}
+  .plaque{max-width:440px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:30}
+  .mbar .btn{box-shadow:0 12px 30px -10px rgba(0,0,0,.45)}
+  footer{padding-bottom:90px}
+}
+@media (max-width:520px){.prods{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by <a href="https://reywen-design.github.io/">Reywen Design</a> — not the official Wausau Awards &amp; Engraving website. All details are taken from wausauawards.com.</div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top"><b>Wausau Awards</b><small>&amp; Engraving · since 1977</small></a>
+  <nav><a href="#products">Products</a><a href="#order">How to order</a><a href="#visit">Showroom</a></nav>
+  <a class="btn btn-n" href="mailto:information@wausauawards.com?subject=Quote%20request">Request a quote</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="kicker">Family owned · Wausau, Wisconsin</span>
+    <h1>Plaques and awards people <em>keep for a lifetime.</em></h1>
+    <p class="lead">Cast and etched metal plaques, donor recognition, engraved wood and corporate awards — designed, laid out and engraved in-house by a second-generation family business.</p>
+    <div class="cta">
+      <a class="btn btn-n" href="mailto:information@wausauawards.com?subject=Quote%20request">Email us for a free quote</a>
+      <a class="btn btn-l" href="tel:+17158427701">Call 715-842-7701</a>
+    </div>
+    <div class="facts"><div><b>1977</b>founded</div><div><b>2nd</b>generation</div><div><b>Free</b>layouts &amp; quotes</div></div>
+  </div>
+  <div class="plaque" aria-hidden="true"><div class="face"><small>In recognition of</small><b>Your Name Here</b><div class="rule"></div><span>Cast bronze · raised lettering</span></div></div>
+</div></section>
+
+<section class="white" id="products"><div class="wrap">
+  <h2>What we make</h2>
+  <p class="sub">From a single desk name plate to a donor wall with 200 names.</p>
+  <div class="prods">
+    <div class="prod"><div class="sw bronze"><i>Cast</i></div><div class="tx"><h3>Cast metal plaques</h3><p>Bronze or aluminum, with raised artwork that draws attention.</p></div></div>
+    <div class="prod"><div class="sw steel"><i>Etched</i></div><div class="tx"><h3>Etched metal plaques</h3><p>Stainless steel, bronze, brass or copper — for fine detail and logos.</p></div></div>
+    <div class="prod"><div class="sw tree"><i>Donors</i></div><div class="tx"><h3>Donor &amp; memorial trees</h3><p>Engraved leaves, acorns, stones and mini-trees for recognition walls.</p></div></div>
+    <div class="prod"><div class="sw wood"><i>Laser</i></div><div class="tx"><h3>Laser-engraved wood</h3><p>Finely detailed engraving in cherry, alder and bamboo.</p></div></div>
+    <div class="prod"><div class="sw stone"><i>Garden</i></div><div class="tx"><h3>Garden memorials</h3><p>Durable outdoor markers for donors and loved ones.</p></div></div>
+    <div class="prod"><div class="sw granite"><i>Granite</i></div><div class="tx"><h3>Marble &amp; granite tiles</h3><p>Laser-etched black marble and granite, plus name badges and plates.</p></div></div>
+  </div>
+</div></section>
+
+<section id="order"><div class="wrap">
+  <h2>How ordering works</h2>
+  <p class="sub">No shopping cart needed — every piece is quoted to your project.</p>
+  <div class="steps">
+    <div class="step"><h3>Send your text</h3><p>Email the wording in plain text. Long lists, like 200 donor names, work best as an Excel file.</p></div>
+    <div class="step"><h3>See a free preview</h3><p>We send a layout and quote with no obligation. Photos don't need to be perfect — we can clean them up.</p></div>
+    <div class="step"><h3>Approve &amp; we make it</h3><p>Once you approve, we produce it in-house and ship or have it ready in the showroom.</p></div>
+  </div>
+</div></section>
+
+<section class="white"><div class="wrap ship">
+  <div>
+    <h2>Made in Wausau, shipped anywhere</h2>
+    <p class="sub" style="margin-bottom:22px">We've shipped finished projects across the continental US — and beyond.</p>
+    <ul><li>All 48 continental states</li><li>Alaska</li><li>Hawaii</li><li>Guam</li><li>US Virgin Islands</li></ul>
+  </div>
+  <p class="quote">“When I opened the box that you shipped to me, I was overwhelmed by the quality of your company's work product.”<small>Customer in Tucson, Arizona — from our testimonials page</small></p>
+</div></section>
+
+<section id="visit"><div class="wrap visit">
+  <div class="card">
+    <h3>Visit the showroom</h3>
+    <address>308 S First Avenue, Wausau, WI 54401</address>
+    <div class="row"><span>Monday – Friday</span><span>9:30 a.m. – 5:00 p.m.</span></div>
+    <div class="row"><span>Saturday – Sunday</span><span>Closed</span></div>
+    <div class="cta"><a class="btn btn-l" href="tel:+17158427701">715-842-7701</a><a class="btn btn-l" href="mailto:information@wausauawards.com">information@wausauawards.com</a></div>
+  </div>
+  <div class="map"><iframe title="Map to Wausau Awards & Engraving" loading="lazy" src="https://www.google.com/maps?q=308+S+1st+Ave,+Wausau,+WI+54401&output=embed"></iframe></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© Wausau Awards &amp; Engraving LLC · 308 S First Avenue, Wausau, WI 54401</span><span>Concept by Reywen Design</span></div></footer>
+<div class="mbar"><a class="btn btn-n" href="mailto:information@wausauawards.com?subject=Quote%20request">Get a quote</a><a class="btn btn-l" href="tel:+17158427701">Call</a></div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Stewart Ave Collision &amp; Repair — Wausau auto body (concept)</title>
+<meta name="description" content="Concept redesign by Reywen Design. Not the official Stewart Ave Collision & Repair website.">
+<style>
+:root{--bg:#121315;--panel:#1b1d20;--line:#2b2e33;--ink:#f3f4f6;--muted:#a3a8b1;--red:#c8102e;--red2:#e5243f;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.concept{background:#000;color:#b9bec7;font-size:13px;text-align:center;padding:9px 16px;border-bottom:1px solid var(--line)}
+.concept a{color:#ff6b7f}
+header{position:sticky;top:0;z-index:20;background:rgba(18,19,21,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo .plate{background:var(--red);color:#fff;font-weight:900;font-style:italic;padding:7px 12px;border-radius:6px;letter-spacing:-.01em;border:2px solid #fff;box-shadow:0 0 0 2px var(--red)}
+.logo small{color:var(--muted);font-size:13px;line-height:1.2}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s ease,background .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-r{background:var(--red);color:#fff}
+.btn-r:hover{background:var(--red2)}
+.btn-g{border:1px solid #3a3e45;color:#fff;background:transparent}
+.btn-g:hover{border-color:#fff}
+.hero{padding:80px 0 70px;background:radial-gradient(900px 480px at 90% 10%,rgba(200,16,46,.28),transparent 60%),linear-gradient(180deg,#16171a,#121315)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.kicker{color:#ff6b7f;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin-bottom:16px;display:block}
+h1{font-size:clamp(36px,5.4vw,60px);line-height:1.04;letter-spacing:-.03em;margin-bottom:20px}
+h1 em{font-style:normal;color:var(--red2)}
+.lead{font-size:19px;color:var(--muted);max-width:560px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.perks{display:grid;gap:12px}
+.perk{display:flex;gap:16px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.perk .ic{flex:none;width:44px;height:44px;border-radius:10px;background:rgba(200,16,46,.15);color:#ff6b7f;display:grid;place-items:center}
+.perk .ic svg{width:24px;height:24px}
+.perk b{display:block;font-size:17px}
+.perk span{color:var(--muted);font-size:14px}
+section{padding:76px 0}
+h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.02em;line-height:1.15;margin-bottom:12px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:40px;font-size:17px}
+.svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px;transition:border-color .2s ease,transform .2s ease}
+.svc:hover{border-color:var(--red);transform:translateY(-3px)}
+.svc .n{font-size:13px;color:#ff6b7f;font-weight:800;letter-spacing:.1em;margin-bottom:10px;display:block}
+.svc h3{font-size:18px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:15px}
+.alu{margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:linear-gradient(90deg,rgba(200,16,46,.18),rgba(200,16,46,.04));border:1px solid rgba(200,16,46,.45);border-radius:var(--r);padding:24px 28px}
+.alu b{font-size:20px}
+.alu span{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{border-top:3px solid var(--red);padding-top:20px}
+.step:before{counter-increment:s;content:"0" counter(s);font-size:40px;font-weight:900;color:#3a3e45;display:block;line-height:1;margin-bottom:12px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.est{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.est ol{list-style:none;counter-reset:e}
+.est li{counter-increment:e;padding:14px 0 14px 46px;position:relative;border-top:1px solid var(--line);color:var(--muted)}
+.est li:first-child{border-top:0}
+.est li b{color:#fff}
+.est li:before{content:counter(e);position:absolute;left:0;top:12px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;display:grid;place-items:center;font-size:14px}
+.box{background:#0e0f11;border:1px solid var(--line);border-radius:20px;padding:30px}
+.box h3{font-size:22px;margin-bottom:8px}
+.box p{color:var(--muted);margin-bottom:20px}
+.box .btn{width:100%;margin-top:10px}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:32px}
+.card h3{font-size:24px;margin-bottom:6px}
+.card address{font-style:normal;color:var(--muted);margin-bottom:20px}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:9px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:#ff6b7f;font-weight:700}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:340px}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block;filter:grayscale(.4) contrast(1.05)}
+footer{border-top:1px solid var(--line);color:#7d838c;padding:30px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media (max-width:900px){
+  .hero .wrap,.est,.visit{grid-template-columns:1fr}
+  .svcs{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  nav,header .btn{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:30}
+  .mbar .btn{box-shadow:0 12px 30px -10px rgba(0,0,0,.7)}
+  .mbar .btn-g{background:#1b1d20}
+  footer{padding-bottom:90px}
+}
+@media (max-width:520px){.svcs,.steps{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by <a href="https://reywen-design.github.io/">Reywen Design</a> — not the official Stewart Ave Collision &amp; Repair website. All details are taken from stewartavecollision.com.</div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top"><span class="plate">Stewart Ave</span><small>Collision &amp; Repair<br>Wausau, WI</small></a>
+  <nav><a href="#services">Services</a><a href="#process">How it works</a><a href="#estimate">Free estimate</a><a href="#visit">Visit</a></nav>
+  <a class="btn btn-r" href="tel:+17152985552">(715) 298-5552</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="kicker">Auto body &amp; collision repair · Wausau</span>
+    <h1>Had an accident? <em>We handle it</em> — from estimate to insurance to keys back in your hand.</h1>
+    <p class="lead">Central Wisconsin's one-stop collision shop on Stewart Avenue. All body and mechanical repairs from your accident, under one roof.</p>
+    <div class="cta">
+      <a class="btn btn-r" href="tel:+17152985552">Call for a free estimate</a>
+      <a class="btn btn-g" href="#estimate">Send photos of the damage</a>
+    </div>
+  </div>
+  <div class="perks">
+    <div class="perk"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><div><b>Lifetime warranty</b><span>On all body and mechanical repairs, for as long as you own the vehicle.</span></div></div>
+    <div class="perk"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17l1.5-5h9L18 17"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><path d="M9 12l1-3h4l1 3"/></svg></span><div><b>Free loaner cars</b><span>Stay on the road while we fix yours.</span></div></div>
+    <div class="perk"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><div><b>All insurance companies</b><span>We work with every insurer — and within your budget.</span></div></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Everything your car needs after a collision</h2>
+  <p class="sub">From a minor scratch or dent to major body and frame work.</p>
+  <div class="svcs">
+    <div class="svc"><span class="n">01</span><h3>Body &amp; frame reconstruction</h3><p>Getting the structure straight before anything else.</p></div>
+    <div class="svc"><span class="n">02</span><h3>Auto body repair</h3><p>Dents, panels and bumpers — small or major.</p></div>
+    <div class="svc"><span class="n">03</span><h3>Color matching &amp; painting</h3><p>Paint that matches the rest of your car.</p></div>
+    <div class="svc"><span class="n">04</span><h3>Welding &amp; spot welding</h3><p>Factory-style joins for a safe repair.</p></div>
+    <div class="svc"><span class="n">05</span><h3>Dashboard &amp; steering column</h3><p>Interior repairs after an impact.</p></div>
+    <div class="svc"><span class="n">06</span><h3>Collision-related mechanical</h3><p>All repairs needed as a result of the accident.</p></div>
+  </div>
+  <div class="alu"><div><b>Aluminum repair, in house</b><br><span>Fully equipped for aluminum work on all the new Fords and most semis.</span></div><a class="btn btn-r" href="tel:+17152985552">Ask about your vehicle</a></div>
+</div></section>
+
+<section class="band" id="process"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="sub">We walk you through the whole collision repair process.</p>
+  <div class="steps">
+    <div class="step"><h3>Free estimate</h3><p>Stop by or contact us — we look at the damage and write it up.</p></div>
+    <div class="step"><h3>Insurance &amp; appraisal</h3><p>We help with the claim and appraisal, whoever your insurer is.</p></div>
+    <div class="step"><h3>Repair</h3><p>Body, frame, paint and mechanical, all under one roof. Loaner car available.</p></div>
+    <div class="step"><h3>Back on the road</h3><p>Covered by a lifetime warranty for as long as you own the car.</p></div>
+  </div>
+</div></section>
+
+<section id="estimate"><div class="wrap est">
+  <div>
+    <h2>Start your estimate from your phone</h2>
+    <p class="sub" style="margin-bottom:18px">Send a few photos and we'll tell you what we see.</p>
+    <ol>
+      <li><b>One photo from 6–8 feet away</b> showing the whole damaged side.</li>
+      <li><b>Two or three close-ups</b> of the dents, scrapes or cracks.</li>
+      <li><b>Your name, phone and insurer</b> (and claim number, if you have one).</li>
+    </ol>
+  </div>
+  <div class="box">
+    <h3>Free, no-obligation estimate</h3>
+    <p>Email your photos or call — whichever is easier.</p>
+    <a class="btn btn-r" href="mailto:estimates@stewartavecollision.com?subject=Estimate%20request%20-%20photos%20attached">Email photos for an estimate</a>
+    <a class="btn btn-g" href="tel:+17152985552">Call (715) 298-5552</a>
+  </div>
+</div></section>
+
+<section class="band" id="visit"><div class="wrap visit">
+  <div class="card">
+    <h3>Visit the shop</h3>
+    <address>4905 Stewart Avenue, Wausau, WI 54401</address>
+    <table class="hours" id="hours">
+      <tr data-d="1"><td>Monday</td><td>7:00 a.m. – 5:30 p.m.</td></tr>
+      <tr data-d="2"><td>Tuesday</td><td>7:00 a.m. – 5:30 p.m.</td></tr>
+      <tr data-d="3"><td>Wednesday</td><td>7:00 a.m. – 5:30 p.m.</td></tr>
+      <tr data-d="4"><td>Thursday</td><td>7:00 a.m. – 5:30 p.m.</td></tr>
+      <tr data-d="5"><td>Friday</td><td>7:00 a.m. – 5:30 p.m.</td></tr>
+      <tr data-d="6"><td>Saturday</td><td>By appointment</td></tr>
+      <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+    </table>
+  </div>
+  <div class="map"><iframe title="Map to Stewart Ave Collision & Repair" loading="lazy" src="https://www.google.com/maps?q=4905+Stewart+Ave,+Wausau,+WI+54401&output=embed"></iframe></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© Stewart Ave Collision &amp; Repair · 4905 Stewart Avenue, Wausau, WI 54401</span><span>Concept by Reywen Design</span></div></footer>
+<div class="mbar"><a class="btn btn-r" href="tel:+17152985552">Call now</a><a class="btn btn-g" href="mailto:estimates@stewartavecollision.com?subject=Estimate%20request%20-%20photos%20attached">Send photos</a></div>
+
+<script>
+(function(){
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short'}).formatToParts(new Date());
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.find(function(x){return x.type==='weekday'}).value);
+    var row=document.querySelector('#hours tr[data-d="'+day+'"]'); if(row) row.className='today';
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

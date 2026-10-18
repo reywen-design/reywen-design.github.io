@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Nicholson Hardware — Rockford's hardware store since 1945 (concept)</title>
+<meta name="description" content="Concept redesign by Reywen Design. Not the official Nicholson Hardware website.">
+<style>
+:root{--navy:#0a2f5c;--blue:#0061aa;--yellow:#ffd400;--ink:#14202e;--muted:#5b6878;--line:#e2e7ee;--soft:#f4f6f9;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.concept{background:#111;color:#cfd6df;font-size:13px;text-align:center;padding:9px 16px}
+.concept a{color:var(--yellow)}
+.bar{background:var(--navy);color:#dbe6f3;font-size:14px}
+.bar .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.open{display:inline-flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:#7a8899}
+.dot.on{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.18)}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mono{width:42px;height:42px;background:var(--navy);color:#fff;font-weight:900;display:grid;place-items:center;transform:rotate(45deg);border-radius:6px}
+.mono span{transform:rotate(-45deg);font-size:15px;letter-spacing:-.04em}
+.logo b{display:block;font-size:20px;letter-spacing:.02em;color:var(--blue);line-height:1}
+.logo small{display:block;font-size:11px;letter-spacing:.32em;color:var(--ink);margin-top:3px}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-y{background:var(--yellow);color:var(--navy)}
+.btn-y:hover{box-shadow:0 8px 20px -8px rgba(255,212,0,.8)}
+.btn-o{border:2px solid rgba(255,255,255,.4);color:#fff}
+.btn-o:hover{border-color:#fff}
+.btn-n{background:var(--navy);color:#fff}
+.hero{background:radial-gradient(1000px 500px at 85% 0%,#0d4a8f 0%,transparent 60%),var(--navy);color:#fff;padding:76px 0 84px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:10px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 18px,var(--navy) 18px 36px)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.kicker{display:inline-block;color:var(--yellow);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin-bottom:16px}
+h1{font-size:clamp(36px,5.4vw,60px);line-height:1.04;letter-spacing:-.025em;margin-bottom:20px}
+h1 em{font-style:normal;color:var(--yellow)}
+.lead{font-size:19px;color:#c9d7e8;max-width:560px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.since{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:30px;text-align:center}
+.since .yr{font-size:84px;font-weight:900;line-height:1;color:var(--yellow);letter-spacing:-.04em}
+.since p{color:#c9d7e8;margin-top:8px}
+.since hr{border:0;border-top:1px solid rgba(255,255,255,.14);margin:22px 0}
+.since .row{display:flex;justify-content:space-around;gap:10px}
+.since .row b{display:block;font-size:26px;color:#fff}
+.since .row span{font-size:13px;color:#9fb3cb}
+section{padding:76px 0}
+h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.02em;line-height:1.15;margin-bottom:12px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:40px;font-size:17px}
+.depts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dept{border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .2s ease,transform .2s ease;background:#fff}
+.dept:hover{border-color:var(--blue);transform:translateY(-3px)}
+.dept svg{width:34px;height:34px;color:var(--blue);margin-bottom:14px}
+.dept h3{font-size:17px;margin-bottom:4px}
+.dept p{font-size:14px;color:var(--muted)}
+.dept.ask{background:var(--navy);color:#fff;border-color:var(--navy)}
+.dept.ask p{color:#c9d7e8}
+.dept.ask svg{color:var(--yellow)}
+.soft{background:var(--soft)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.who{background:#fff;border-radius:var(--r);padding:30px;border:1px solid var(--line)}
+.who .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:var(--yellow);color:var(--navy);padding:5px 10px;border-radius:6px;margin-bottom:14px}
+.who h3{font-size:22px;margin-bottom:10px}
+.who ul{list-style:none}
+.who li{padding:8px 0 8px 28px;position:relative;border-top:1px solid var(--line);color:var(--muted)}
+.who li:first-child{border-top:0}
+.who li:before{content:"";position:absolute;left:4px;top:15px;width:12px;height:7px;border-left:3px solid var(--blue);border-bottom:3px solid var(--blue);transform:rotate(-45deg)}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+.t{padding-top:26px;border-top:4px solid var(--navy)}
+.t b{font-size:40px;font-weight:900;color:var(--blue);letter-spacing:-.03em;display:block;line-height:1;margin-bottom:10px}
+.t p{color:var(--muted)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.vcard{background:var(--navy);color:#fff;border-radius:20px;padding:36px}
+.vcard h3{font-size:26px;margin-bottom:6px}
+.vcard address{font-style:normal;color:#c9d7e8;margin-bottom:22px}
+.hours{width:100%;border-collapse:collapse;margin-bottom:26px}
+.hours td{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.hours td:last-child{text-align:right;color:#c9d7e8}
+.hours tr.today td{color:var(--yellow);font-weight:700}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--soft)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{background:#0b1622;color:#8d9bad;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mcall{display:none}
+@media (max-width:900px){
+  .hero .wrap,.two,.visit{grid-template-columns:1fr}
+  .depts{grid-template-columns:repeat(2,1fr)}
+  .timeline{grid-template-columns:1fr}
+  nav{display:none}
+  header .btn{display:none}
+  .mcall{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;justify-content:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.45)}
+  footer{padding-bottom:90px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by <a href="https://reywen-design.github.io/">Reywen Design</a> — not the official Nicholson Hardware website. All details are taken from nicholsonhardware.com.</div>
+
+<div class="bar"><div class="wrap">
+  <span class="open"><span class="dot" id="dot"></span><span id="status">Mon–Sat 7:30 a.m.–5:30 p.m.</span></span>
+  <span>1131 2nd Avenue · Midtown Rockford</span>
+</div></div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top"><span class="mono"><span>NH</span></span><span><b>NICHOLSON</b><small>HARDWARE</small></span></a>
+  <nav><a href="#departments">Departments</a><a href="#pros">Contractors</a><a href="#history">Our story</a><a href="#visit">Visit</a></nav>
+  <a class="btn btn-n" href="tel:+18159634821">(815) 963-4821</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="kicker">Family owned · Rockford, Illinois</span>
+    <h1>The hardware store Rockford has trusted <em>since 1945.</em></h1>
+    <p class="lead">Three generations of the Nicholson family. 25,000 square feet of tools, paint, plumbing, electrical and the hard-to-find parts the big-box stores don't carry — with staff who know where everything is.</p>
+    <div class="cta">
+      <a class="btn btn-y" href="tel:+18159634821">Call the store</a>
+      <a class="btn btn-o" href="https://www.google.com/maps/search/?api=1&query=Nicholson+Hardware+1131+2nd+Ave+Rockford+IL" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </div>
+  <div class="since">
+    <div class="yr">1945</div>
+    <p>Owned and operated by the Nicholson family</p>
+    <hr>
+    <div class="row"><div><b>3</b><span>generations</span></div><div><b>25k</b><span>sq. ft. store</span></div><div><b>7</b><span>departments</span></div></div>
+  </div>
+</div></section>
+
+<section id="departments"><div class="wrap">
+  <h2>Everything for the job, under one roof</h2>
+  <p class="sub">Walk in with a broken part, walk out with the right one. If it's not on the shelf, ask — finding hard-to-find items is what we do.</p>
+  <div class="depts">
+    <div class="dept"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg><h3>Tools</h3><p>Hand and power tools for pros and weekend projects.</p></div>
+    <div class="dept"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="6" rx="1"/><path d="M17 6h3v5h-8v3"/><rect x="10" y="14" width="4" height="7" rx="1"/></svg><h3>Paint</h3><p>Paint, stains and the supplies to get it on the wall.</p></div>
+    <div class="dept"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM10 7h6a4 4 0 0 1 4 4v9"/><path d="M17 20h6"/></svg><h3>Plumbing</h3><p>Fittings, valves and repair parts — old and new.</p></div>
+    <div class="dept"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M8 6h8l-1 4H9z"/><path d="M10 10v10l2 2 2-2V10"/></svg><h3>Fasteners</h3><p>Screws, bolts, anchors — by the piece or by the box.</p></div>
+    <div class="dept"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="1"/><circle cx="15" cy="12" r="1.5"/></svg><h3>Builders' hardware</h3><p>Locks, hinges and door hardware for every build.</p></div>
+    <div class="dept"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><h3>Electrical</h3><p>Wire, boxes, switches and lighting parts.</p></div>
+    <div class="dept"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12C12 7 8 4 3 4c0 5 4 8 9 8zM12 14c0-4 3-7 8-7 0 4-3 7-8 7z"/></svg><h3>Lawn &amp; garden</h3><p>Fertilizer, pest control, chainsaws and yard care.</p></div>
+    <a class="dept ask" href="tel:+18159634821" style="text-decoration:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-5-5"/></svg><h3>Hard-to-find part?</h3><p>Call before you drive over — we'll check the shelf for you.</p></a>
+  </div>
+</div></section>
+
+<section class="soft" id="pros"><div class="wrap">
+  <h2>Built for contractors and do-it-yourselfers</h2>
+  <p class="sub">Serving both has been our top priority for three generations.</p>
+  <div class="two">
+    <div class="who"><span class="tag">For contractors</span><h3>Get in, get the part, get back to the job</h3>
+      <ul><li>Doors open at 7:30 a.m., six days a week</li><li>Deep stock of fasteners, fittings and builders' hardware</li><li>Experienced staff who speak your trade</li></ul></div>
+    <div class="who"><span class="tag">For homeowners</span><h3>Bring the broken part. We'll match it.</h3>
+      <ul><li>Advice from people who've done the repair before</li><li>Hard-to-find items for older Rockford homes</li><li>Buy exactly the quantity you need</li></ul></div>
+  </div>
+</div></section>
+
+<section id="history"><div class="wrap">
+  <h2>Our story</h2>
+  <p class="sub">A Midtown Rockford fixture, run by the same family for three generations.</p>
+  <div class="timeline">
+    <div class="t"><b>1945</b><p>Nicholson Hardware opens its doors in Rockford.</p></div>
+    <div class="t"><b>1971</b><p>The store moves into its 25,000 sq. ft. home at 1131 2nd Avenue.</p></div>
+    <div class="t"><b>Today</b><p>The third generation of the Nicholson family runs the counter — same commitment to every customer.</p></div>
+  </div>
+</div></section>
+
+<section class="soft" id="visit"><div class="wrap">
+  <div class="visit">
+    <div class="vcard">
+      <h3>Visit the store</h3>
+      <address>1131 2nd Avenue, Rockford, IL 61104</address>
+      <table class="hours" id="hours">
+        <tr data-d="1"><td>Monday</td><td>7:30 a.m. – 5:30 p.m.</td></tr>
+        <tr data-d="2"><td>Tuesday</td><td>7:30 a.m. – 5:30 p.m.</td></tr>
+        <tr data-d="3"><td>Wednesday</td><td>7:30 a.m. – 5:30 p.m.</td></tr>
+        <tr data-d="4"><td>Thursday</td><td>7:30 a.m. – 5:30 p.m.</td></tr>
+        <tr data-d="5"><td>Friday</td><td>7:30 a.m. – 5:30 p.m.</td></tr>
+        <tr data-d="6"><td>Saturday</td><td>7:30 a.m. – 5:30 p.m.</td></tr>
+        <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <div class="cta"><a class="btn btn-y" href="tel:+18159634821">(815) 963-4821</a><a class="btn btn-o" href="mailto:n.hardware@comcast.net">Email us</a></div>
+    </div>
+    <div class="map"><iframe title="Map to Nicholson Hardware" loading="lazy" src="https://www.google.com/maps?q=1131+2nd+Ave,+Rockford,+IL+61104&output=embed"></iframe></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© Nicholson Hardware · 1131 2nd Avenue, Rockford, IL 61104 · (815) 963-4821</span><span>Concept by Reywen Design</span></div></footer>
+<a class="btn btn-y mcall" href="tel:+18159634821">Call the store · (815) 963-4821</a>
+
+<script>
+// "Open now" badge and today's row, in Rockford time (America/Chicago)
+(function(){
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var g=function(t){return (p.find(function(x){return x.type===t})||{}).value};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+    var mins=(parseInt(g('hour'),10)%24)*60+parseInt(g('minute'),10);
+    var open=day>=1&&day<=6&&mins>=450&&mins<1050;
+    document.getElementById('dot').className='dot'+(open?' on':'');
+    document.getElementById('status').textContent=open?'Open now · until 5:30 p.m.':(day===0||(day===6&&mins>=1050)?'Closed · opens Monday 7:30 a.m.':'Closed · opens 7:30 a.m.');
+    var row=document.querySelector('#hours tr[data-d="'+day+'"]'); if(row) row.className='today';
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
