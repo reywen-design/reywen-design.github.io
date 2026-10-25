@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>United Structures Inc. — commercial builder, Schofield WI (concept)</title>
+<meta name="description" content="Concept redesign by Reywen Design. Not the official United Structures website.">
+<style>
+:root{--navy:#12233b;--navy2:#1b3352;--ink:#111a26;--muted:#5b6777;--line:#e1e6ec;--soft:#f3f5f8;--red:#d2232a;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.concept{background:#0a1422;color:#b3bfcd;font-size:13px;text-align:center;padding:9px 16px}
+.concept a{color:#ff7b80}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark{width:38px;height:30px;background:var(--navy);clip-path:polygon(0 100%,0 35%,50% 0,100% 35%,100% 100%)}
+.logo b{font-size:19px;font-weight:900;letter-spacing:.04em;color:var(--navy);line-height:1.1}
+.logo small{display:block;font-size:11px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;font-weight:600}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s ease,filter .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-r{background:var(--red);color:#fff}
+.btn-r:hover{filter:brightness(1.08)}
+.btn-o{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-d{background:var(--navy);color:#fff}
+.hero{background:var(--navy);color:#fff;padding:84px 0 0;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:block;color:#ff8a8f;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:16px}
+h1{font-size:clamp(36px,5.6vw,62px);line-height:1.03;letter-spacing:-.025em;max-width:780px;margin-bottom:20px}
+h1 em{font-style:normal;color:#ff8a8f}
+.lead{font-size:19px;color:#c0ccda;max-width:600px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+/* pre-engineered steel building frame */
+.frame{margin-top:56px;height:180px;position:relative}
+.frame svg{position:absolute;inset:0;width:100%;height:100%}
+section{padding:76px 0}
+h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.02em;line-height:1.15;margin-bottom:12px}
+.sub{color:var(--muted);max-width:660px;margin-bottom:40px;font-size:17px}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.w{border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.w b.n{display:block;font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--red);margin-bottom:10px}
+.w h3{font-size:20px;margin-bottom:6px}
+.w p{color:var(--muted);font-size:15px}
+.soft{background:var(--soft)}
+.types{display:flex;flex-wrap:wrap;gap:10px}
+.types span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:10px 18px;font-weight:600}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ph{background:#fff;border-radius:var(--r);border-top:4px solid var(--navy);padding:24px}
+.ph h3{font-size:19px;margin-bottom:12px}
+.ph ul{list-style:none}
+.ph li{padding:7px 0;border-top:1px solid var(--line);font-size:15px}
+.ph li:first-child{border-top:0}
+.vp{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;background:var(--navy2);color:#fff;border-radius:18px;padding:40px}
+.vp p{color:#c0ccda}
+.vp .badge{border:2px solid #fff;border-radius:12px;padding:22px;text-align:center;font-weight:900;letter-spacing:.08em;line-height:1.3}
+.vp .badge small{display:block;font-weight:600;letter-spacing:.14em;font-size:12px;color:#c0ccda;margin-top:6px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cc{border:1px solid var(--line);border-radius:18px;padding:32px;background:#fff}
+.cc h3{font-size:22px;margin-bottom:6px}
+.cc address{font-style:normal;color:var(--muted);margin-bottom:18px}
+.cc .row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid var(--line)}
+.cc .row a{font-weight:700;color:var(--navy);text-decoration:none}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:320px}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+footer{background:#0a1422;color:#8796a8;padding:30px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media (max-width:900px){
+  .why,.phases{grid-template-columns:1fr}
+  .vp,.contact{grid-template-columns:1fr}
+  nav,header .btn{display:none}
+  .frame{height:120px;margin-top:40px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:30}
+  .mbar .btn{box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+  footer{padding-bottom:90px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by <a href="https://reywen-design.github.io/">Reywen Design</a> — not the official United Structures website. All details are taken from unitedstructuresinc.com.</div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top"><span class="mark" aria-hidden="true"></span><span><b>UNITED STRUCTURES</b><small>Commercial builder · est. 1990</small></span></a>
+  <nav><a href="#why">Why us</a><a href="#services">Services</a><a href="#vp">VP Buildings</a><a href="#contact">Contact</a></nav>
+  <a class="btn btn-d" href="tel:+17153551040">715-355-1040</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <span class="kicker">Design-build · Central Wisconsin</span>
+  <h1>Commercial buildings, designed and built <em>faster — and on budget.</em></h1>
+  <p class="lead">From pre-engineered steel buildings to conventional construction: warehouses, manufacturing, retail, offices and industrial facilities, from design to certificate of occupancy.</p>
+  <div class="cta"><a class="btn btn-r" href="mailto:info@unitedstructuresinc.com?subject=New%20project%20inquiry">Talk about your project</a><a class="btn btn-o" href="#services">How we work</a></div>
+  <div class="frame" aria-hidden="true">
+    <svg viewBox="0 0 1100 180" preserveAspectRatio="xMidYMax meet" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="3">
+      <path d="M40 180V70l230-50 230 50v110"/><path d="M40 70h460"/><path d="M110 180V55M180 180V40M270 180V20M360 180V40M430 180V55"/>
+      <path d="M560 180V90l250-55 250 55v90" stroke="rgba(255,138,143,.55)"/><path d="M560 90h500" stroke="rgba(255,138,143,.55)"/>
+      <path d="M640 180V72M720 180V55M810 180V35M900 180V55M980 180V72" stroke="rgba(255,138,143,.45)"/>
+      <path d="M0 179h1100" stroke="rgba(255,255,255,.4)"/>
+    </svg>
+  </div>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <h2>Why owners choose a design-build partner</h2>
+  <p class="sub">One team from first sketch to keys — so design and construction are planned together from day one.</p>
+  <div class="why">
+    <div class="w"><b class="n">01</b><h3>Fast occupancy</h3><p>Design-build shortens project duration, so you use your facility sooner and with fewer delays.</p></div>
+    <div class="w"><b class="n">02</b><h3>Cost control</h3><p>We listen to your needs and value-engineer the most cost-effective materials and methods.</p></div>
+    <div class="w"><b class="n">03</b><h3>Trusted network</h3><p>Long relationships with subcontractors and suppliers mean quality work, on time, at a fair price.</p></div>
+  </div>
+</div></section>
+
+<section class="soft"><div class="wrap">
+  <h2>What we build</h2>
+  <p class="sub">Dozens of projects across Central Wisconsin every year.</p>
+  <div class="types"><span>Warehouses</span><span>Manufacturing</span><span>Distribution</span><span>Retail</span><span>Commercial</span><span>Offices</span><span>Industrial facilities</span><span>Special-use buildings</span></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Every phase, handled</h2>
+  <p class="sub">The services we provide so you get a high-quality building the first time.</p>
+  <div class="phases">
+    <div class="ph"><h3>Pre-construction</h3><ul><li>Design-build</li><li>Site planning</li><li>Estimating</li><li>Engineering</li><li>Scheduling</li><li>Permitting</li></ul></div>
+    <div class="ph"><h3>Construction</h3><ul><li>Scheduling</li><li>Change orders</li><li>Quality control</li><li>Safety</li><li>Job updates</li></ul></div>
+    <div class="ph"><h3>Post-construction</h3><ul><li>Warranty inspections</li><li>Certificate of occupancy</li><li>Repairs</li></ul></div>
+  </div>
+</div></section>
+
+<section class="soft" id="vp"><div class="wrap">
+  <div class="vp">
+    <div>
+      <h2 style="color:#fff">Varco Pruden authorized builder</h2>
+      <p>Recognized in Varco-Pruden Buildings' North Central Region since 1990 and listed among the top 100 builders by Metal Construction News. Pre-engineered steel systems with a wide choice of wall panels, roof panels, framing and finishes.</p>
+    </div>
+    <div class="badge">VARCO PRUDEN<small>AUTHORIZED BUILDER</small></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <div class="cc">
+    <h3>Start your project</h3>
+    <address>3806 Concord Ave, Schofield, WI 54476</address>
+    <div class="row"><span>Phone</span><a href="tel:+17153551040">715-355-1040</a></div>
+    <div class="row"><span>Email</span><a href="mailto:info@unitedstructuresinc.com">info@unitedstructuresinc.com</a></div>
+    <div class="row"><span>Fax</span><span>715-359-0541</span></div>
+  </div>
+  <div class="map"><iframe title="Map to United Structures" loading="lazy" src="https://www.google.com/maps?q=3806+Concord+Ave,+Schofield,+WI+54476&output=embed"></iframe></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© United Structures Inc. · Schofield, Wisconsin</span><span>Concept by Reywen Design</span></div></footer>
+<div class="mbar"><a class="btn btn-r" href="tel:+17153551040">Call</a><a class="btn btn-d" href="mailto:info@unitedstructuresinc.com?subject=New%20project%20inquiry">Email</a></div>
+</body>
+</html>

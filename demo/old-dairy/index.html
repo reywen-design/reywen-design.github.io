@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Old Dairy — café &amp; bakery in downtown Macomb (concept)</title>
+<meta name="description" content="Concept redesign by Reywen Design. Not the official Old Dairy website.">
+<style>
+:root{--cream:#fbf5ea;--paper:#fffdf8;--brown:#3b2a1e;--muted:#7a6656;--line:#ecdfca;--red:#c8372d;--tan:#cab276;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--brown);background:var(--cream);line-height:1.6}
+a{color:inherit}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.concept{background:var(--brown);color:#e9dcc6;font-size:13px;text-align:center;padding:9px 16px}
+.concept a{color:#ffd28a}
+.awning{height:22px;background:repeating-linear-gradient(90deg,var(--red) 0 44px,var(--paper) 44px 88px);-webkit-mask:radial-gradient(22px 14px at 22px 0,#000 98%,transparent) 0 0/44px 22px repeat-x;mask:radial-gradient(22px 14px at 22px 0,#000 98%,transparent) 0 0/44px 22px repeat-x}
+header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}
+.cow{width:40px;height:40px;border-radius:50%;background:#fff;border:2px solid var(--brown);position:relative;overflow:hidden}
+.cow:before,.cow:after{content:"";position:absolute;background:var(--brown);border-radius:50%}
+.cow:before{width:18px;height:14px;left:4px;top:6px}.cow:after{width:12px;height:16px;right:4px;bottom:3px}
+.logo b{font-family:Georgia,serif;font-size:22px;line-height:1}
+.logo small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:99px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s ease,box-shadow .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-r{background:var(--red);color:#fff}
+.btn-r:hover{box-shadow:0 10px 22px -10px rgba(200,55,45,.8)}
+.btn-l{background:var(--paper);color:var(--brown);border:1px solid var(--line)}
+.hero{padding:64px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.open{display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:14px;font-weight:600;margin-bottom:18px}
+.dot{width:9px;height:9px;border-radius:50%;background:#b9a892}
+.dot.on{background:#2fa66a;box-shadow:0 0 0 4px rgba(47,166,106,.18)}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(38px,5.6vw,62px);line-height:1.05;letter-spacing:-.01em;margin-bottom:18px}
+h1 em{color:var(--red)}
+.lead{font-size:19px;color:var(--muted);max-width:520px;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.board{background:#2d241d;color:#f3ead9;border-radius:22px;padding:30px;border:10px solid #8a5a33;box-shadow:0 30px 60px -30px rgba(59,42,30,.7);font-family:Georgia,serif}
+.board h3{font-weight:400;font-size:26px;text-align:center;margin-bottom:4px}
+.board p.c{text-align:center;color:#cdbf9f;font-size:14px;margin-bottom:16px;font-family:"Segoe UI",system-ui,sans-serif}
+.board ul{list-style:none}
+.board li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed rgba(243,234,217,.25);font-size:17px}
+.board li span:last-child{color:#ffd28a;font-family:"Segoe UI",system-ui,sans-serif;font-size:14px;align-self:center}
+.board li.today{color:#ffd28a}
+section{padding:72px 0}
+h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(30px,3.8vw,42px);line-height:1.15;margin-bottom:12px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:38px;font-size:17px}
+.paper{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card .ic{font-size:30px;margin-bottom:10px}
+.card h3{font-family:Georgia,serif;font-weight:400;font-size:24px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.pies{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pies span{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:14px}
+.menu-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.menu-cta small{color:var(--muted)}
+.rooms{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.room{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;gap:20px;align-items:flex-start}
+.room b.n{font-family:Georgia,serif;font-size:52px;line-height:1;color:var(--red);flex:none}
+.room h3{font-size:19px;margin-bottom:4px}
+.room p{color:var(--muted);font-size:15px}
+.events{margin-top:18px;color:var(--muted);font-size:15px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.stamp{aspect-ratio:1;max-width:340px;border-radius:50%;border:3px dashed var(--red);display:grid;place-items:center;text-align:center;color:var(--red);font-family:Georgia,serif;padding:30px;margin:0 auto}
+.stamp b{display:block;font-size:64px;line-height:1;font-weight:400}
+.stamp span{font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-family:"Segoe UI",system-ui,sans-serif;font-weight:700}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vcard{background:var(--brown);color:#f3ead9;border-radius:22px;padding:32px}
+.vcard h3{font-family:Georgia,serif;font-weight:400;font-size:30px;margin-bottom:6px}
+.vcard address{font-style:normal;color:#d7c8ad;margin-bottom:20px}
+.vcard .row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(243,234,217,.18)}
+.vcard .cta{margin-top:22px}
+.vcard .btn-l{background:transparent;color:#f3ead9;border-color:rgba(243,234,217,.35)}
+.map{border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:320px}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+footer{padding:28px 0 34px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media (max-width:900px){
+  .hero .wrap,.rooms,.story,.visit{grid-template-columns:1fr}
+  .menu{grid-template-columns:1fr}
+  nav,header .btn{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:30}
+  .mbar .btn{box-shadow:0 12px 30px -10px rgba(59,42,30,.6)}
+  footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by <a href="https://reywen-design.github.io/">Reywen Design</a> — not the official Old Dairy website. All details are taken from olddairymacomb.com.</div>
+<div class="awning" aria-hidden="true"></div>
+<header><div class="wrap">
+  <a class="logo" href="#top"><span class="cow" aria-hidden="true"></span><span><b>The Old Dairy</b><small>Macomb, Illinois</small></span></a>
+  <nav><a href="#menu">Menu</a><a href="#rooms">Meeting rooms</a><a href="#visit">Visit</a></nav>
+  <a class="btn btn-r" href="tel:+13098376700">Call ahead</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="open"><span class="dot" id="dot"></span><span id="status">Mon–Sat · 7 a.m.–3 p.m.</span></span>
+    <h1>Breakfast all day, pie made from scratch, and <em>a bottomless cup.</em></h1>
+    <p class="lead">Macomb's downtown café on South Lafayette. Sink into an overstuffed chair to study, read or play a game — or phone ahead and we'll have your order waiting.</p>
+    <div class="cta"><a class="btn btn-r" href="tel:+13098376700">Phone in an order</a><a class="btn btn-l" href="#menu">See the menu</a></div>
+  </div>
+  <div class="board">
+    <h3>Soup of the day</h3>
+    <p class="c">Cup · Bowl · Bread bowl</p>
+    <ul id="soups">
+      <li data-d="1"><span>Chicken Noodle</span><span>Mon</span></li>
+      <li data-d="2"><span>Potato Soup</span><span>Tue</span></li>
+      <li data-d="3"><span>Aunt Bunny's Taco Soup</span><span>Wed</span></li>
+      <li data-d="4"><span>Clam Chowder</span><span>Thu</span></li>
+      <li data-d="5"><span>Vegetable</span><span>Fri</span></li>
+      <li data-d="6"><span>Chili</span><span>Sat</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="paper" id="menu"><div class="wrap">
+  <h2>What's on the counter</h2>
+  <p class="sub">Simple food done right — the menu you can read on your phone, not a scanned PDF.</p>
+  <div class="menu">
+    <div class="card"><div class="ic">🍳</div><h3>Breakfast, all day</h3><p>Fresh omelets, biscuits and gravy, eggs to order, homemade muffins and our grilled cinnamon rolls.</p></div>
+    <div class="card"><div class="ic">🥪</div><h3>Lunch</h3><p>Sandwiches (some grilled on the panini), fresh salads — Oriental chicken, spinach with warm bacon dressing, Cajun chicken, chef, taco — and homemade soups.</p></div>
+    <div class="card"><div class="ic">☕</div><h3>Coffee bar &amp; pie</h3><p>A bottomless cup of our exclusive blend, a full espresso bar, and Grandma's homemade pie, made from scratch.</p>
+      <div class="pies"><span>Apple</span><span>Coconut Cream</span><span>French Vanilla</span><span>…and more</span></div></div>
+  </div>
+  <div class="menu-cta"><a class="btn btn-r" href="tel:+13098376700">Order ahead · (309) 837-6700</a><small>Dine in or carry out.</small></div>
+</div></section>
+
+<section id="rooms"><div class="wrap">
+  <h2>Meetings, banquets &amp; celebrations</h2>
+  <p class="sub">Two private rooms. We build a menu around your event — buffet, plated, or guests order off the menu.</p>
+  <div class="rooms">
+    <div class="room"><b class="n">60</b><div><h3>Large meeting room</h3><p>Seats up to 60. Floating room fee with a $100 minimum food &amp; beverage purchase for private meetings.</p></div></div>
+    <div class="room"><b class="n">20</b><div><h3>Small meeting room</h3><p>Seats up to 20. Floating room fee with a $50 minimum food &amp; beverage purchase for private meetings.</p></div></div>
+  </div>
+  <p class="events">We've hosted everything from the Al Sears Jazz Festival brunch to business meetings and family celebrations.</p>
+  <div class="cta" style="margin-top:20px"><a class="btn btn-r" href="mailto:OldDairyInfo@gmail.com?subject=Meeting%20room%20request">Ask about a date</a></div>
+</div></section>
+
+<section class="paper"><div class="wrap story">
+  <div>
+    <h2>A café in Macomb's old dairy</h2>
+    <p class="sub" style="margin-bottom:0">Our home on South Lafayette Street was once the town's dairy — look for the downtown history mural painted on our north wall. Today we serve excellent food in a clean place, by the friendliest staff in town.</p>
+  </div>
+  <div class="stamp"><div><b>7–3</b><span>Monday – Saturday</span></div></div>
+</div></section>
+
+<section id="visit"><div class="wrap visit">
+  <div class="vcard">
+    <h3>Come on in</h3>
+    <address>210 South Lafayette Street, Macomb, IL 61455</address>
+    <div class="row"><span>Monday – Saturday</span><span>7 a.m. – 3 p.m.</span></div>
+    <div class="row"><span>Sunday</span><span>Closed</span></div>
+    <div class="cta"><a class="btn btn-r" href="tel:+13098376700">(309) 837-6700</a><a class="btn btn-l" href="mailto:OldDairyInfo@gmail.com">Email us</a></div>
+  </div>
+  <div class="map"><iframe title="Map to The Old Dairy" loading="lazy" src="https://www.google.com/maps?q=210+S+Lafayette+St,+Macomb,+IL+61455&output=embed"></iframe></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© The Old Dairy · 210 South Lafayette Street, Macomb, IL</span><span>Concept by Reywen Design</span></div></footer>
+<div class="mbar"><a class="btn btn-r" href="tel:+13098376700">Call ahead</a><a class="btn btn-l" href="#menu">Menu</a></div>
+
+<script>
+(function(){
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var g=function(t){return (p.find(function(x){return x.type===t})||{}).value};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+    var mins=(parseInt(g('hour'),10)%24)*60+parseInt(g('minute'),10);
+    var open=day>=1&&day<=6&&mins>=420&&mins<900;
+    document.getElementById('dot').className='dot'+(open?' on':'');
+    document.getElementById('status').textContent=open?'Open now · until 3 p.m.':'Closed now · open Mon–Sat 7 a.m.–3 p.m.';
+    var row=document.querySelector('#soups li[data-d="'+day+'"]'); if(row) row.className='today';
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

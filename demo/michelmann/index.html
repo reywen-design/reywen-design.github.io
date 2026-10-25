@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Michelmann Companies — steel, doors &amp; hardware since 1865 (concept)</title>
+<meta name="description" content="Concept redesign by Reywen Design. Not the official Michelmann website.">
+<style>
+:root{--steel:#1f262e;--steel2:#2b343e;--ink:#161b21;--muted:#5d6672;--line:#dfe3e8;--soft:#f2f4f6;--amber:#f2a516;--blue:#2f6fb0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.concept{background:#0c0f12;color:#b8c0ca;font-size:13px;text-align:center;padding:9px 16px}
+.concept a{color:var(--amber)}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{text-decoration:none;line-height:1.05}
+.logo b{display:block;font-size:22px;font-weight:900;letter-spacing:.06em;color:var(--steel)}
+.logo small{font-size:11px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--steel)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s ease,filter .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-a{background:var(--amber);color:#1a1300}
+.btn-a:hover{filter:brightness(1.06)}
+.btn-o{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn-o:hover{border-color:#fff}
+.btn-d{background:var(--steel);color:#fff}
+.hero{color:#fff;padding:84px 0 90px;position:relative;overflow:hidden;
+  background:linear-gradient(90deg,rgba(22,27,33,.97) 0%,rgba(22,27,33,.88) 55%,rgba(22,27,33,.55) 100%),
+  repeating-linear-gradient(90deg,#3a434d 0 2px,transparent 2px 120px),
+  linear-gradient(180deg,#2b343e,#161b21)}
+/* I-beam silhouettes */
+.hero:before,.hero:after{content:"";position:absolute;right:-40px;width:520px;height:64px;background:linear-gradient(180deg,#56606b,#2f373f);
+  clip-path:polygon(0 0,100% 0,100% 18%,56% 18%,56% 82%,100% 82%,100% 100%,0 100%,0 82%,44% 82%,44% 18%,0 18%);opacity:.55}
+.hero:before{top:70px;transform:rotate(-8deg)}
+.hero:after{top:200px;right:60px;transform:rotate(-8deg);opacity:.35}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:block;color:var(--amber);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:16px}
+h1{font-size:clamp(36px,5.6vw,64px);line-height:1.02;letter-spacing:-.025em;max-width:760px;margin-bottom:20px}
+h1 em{font-style:normal;color:var(--amber)}
+.lead{font-size:19px;color:#c3cad3;max-width:600px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.14);max-width:640px}
+.stats b{display:block;font-size:30px;font-weight:900;color:#fff;letter-spacing:-.02em}
+.stats span{font-size:13px;color:#9aa4b0}
+section{padding:76px 0}
+h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.02em;line-height:1.15;margin-bottom:12px}
+.sub{color:var(--muted);max-width:660px;margin-bottom:40px;font-size:17px}
+.divs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.div{border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.div .top{background:var(--steel);color:#fff;padding:26px 28px}
+.div .top small{color:var(--amber);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+.div .top h3{font-size:24px;margin:6px 0 4px}
+.div .top a{color:#c3cad3;text-decoration:none;font-weight:600}
+.div .body{padding:24px 28px;flex:1;display:flex;flex-direction:column}
+.div ul{list-style:none;columns:2;column-gap:20px;margin-bottom:18px}
+.div li{padding:6px 0 6px 18px;position:relative;break-inside:avoid;font-size:15px}
+.div li:before{content:"";position:absolute;left:0;top:14px;width:8px;height:8px;background:var(--amber);transform:rotate(45deg)}
+.div p{color:var(--muted);font-size:15px;margin-bottom:18px}
+.brands{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.brands span{border:1px solid var(--line);border-radius:6px;padding:5px 10px;font-size:13px;font-weight:600;color:var(--steel2);background:var(--soft)}
+.soft{background:var(--soft)}
+.walkin{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.stock{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.shape{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px 12px;text-align:center;font-size:14px;font-weight:600}
+.shape svg{width:40px;height:40px;color:var(--steel2);display:block;margin:0 auto 8px}
+.hoursbox{background:var(--steel);color:#fff;border-radius:16px;padding:30px}
+.hoursbox h3{font-size:22px;margin-bottom:6px}
+.hoursbox p{color:#c3cad3;margin-bottom:18px}
+.hoursbox .big{font-size:28px;font-weight:900;color:var(--amber);margin-bottom:20px;letter-spacing:-.01em}
+.story{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:10px}
+.story:before{content:"";position:absolute;left:0;right:0;top:15px;height:3px;background:linear-gradient(90deg,var(--amber),var(--steel2))}
+.gen{position:relative;padding-top:42px;padding-right:16px}
+.gen:before{content:"";position:absolute;top:6px;left:0;width:22px;height:22px;border-radius:50%;background:#fff;border:4px solid var(--steel)}
+.gen.now:before{background:var(--amber);border-color:var(--amber)}
+.gen small{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.gen b{display:block;font-size:17px;line-height:1.3}
+.gen span{font-size:14px;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cc{border:1px solid var(--line);border-radius:16px;padding:30px}
+.cc h3{font-size:22px;margin-bottom:6px}
+.cc address{font-style:normal;color:var(--muted);margin-bottom:18px}
+.cc .row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.cc .row a{font-weight:700;text-decoration:none;color:var(--blue)}
+.map{border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:320px}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+footer{background:var(--ink);color:#8e98a4;padding:30px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media (max-width:900px){
+  .divs,.walkin,.contact{grid-template-columns:1fr}
+  .story{grid-template-columns:1fr;gap:0}
+  .story:before{left:10px;right:auto;top:0;bottom:0;width:3px;height:auto;background:linear-gradient(180deg,var(--amber),var(--steel2))}
+  .gen{padding:0 0 22px 40px}
+  .gen:before{top:2px}
+  nav,header .btn{display:none}
+  .hero:before,.hero:after{width:300px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:30}
+  .mbar .btn{box-shadow:0 12px 30px -10px rgba(0,0,0,.5);font-size:15px;padding:13px 10px}
+  footer{padding-bottom:90px}
+}
+@media (max-width:520px){.div ul{columns:1}.stock{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by <a href="https://reywen-design.github.io/">Reywen Design</a> — not the official Michelmann website. All details are taken from michelmann.us.</div>
+
+<header><div class="wrap">
+  <a class="logo" href="#top"><b>MICHELMANN</b><small>Quincy, Illinois · since 1865</small></a>
+  <nav><a href="#companies">Our companies</a><a href="#walk-in">Walk-in sales</a><a href="#story">Our story</a><a href="#contact">Contact</a></nav>
+  <a class="btn btn-d" href="tel:+12172220555">(217) 222-0555</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <span class="kicker">Michelmann Steel · Mid-States Door &amp; Hardware</span>
+  <h1>Steel, doors and hardware for your next project — <em>family owned since 1865.</em></h1>
+  <p class="lead">Structural and miscellaneous steel fabrication, plus commercial doors, frames and hardware from a UL-certified shop. Quality product, on-time delivery, superior service — the same ideals for five generations.</p>
+  <div class="cta">
+    <a class="btn btn-a" href="mailto:info@michelmann.us?subject=Quote%20request">Request a quote</a>
+    <a class="btn btn-o" href="#companies">See what we do</a>
+  </div>
+  <div class="stats">
+    <div><b>1865</b><span>founded in Quincy</span></div>
+    <div><b>5</b><span>generations of family</span></div>
+    <div><b>UL</b><span>certified door facility</span></div>
+  </div>
+</div></section>
+
+<section id="companies"><div class="wrap">
+  <h2>Two companies, one family</h2>
+  <p class="sub">From a single bollard to the steel package for a building — and the doors and hardware that go in it.</p>
+  <div class="divs">
+    <div class="div">
+      <div class="top"><small>Fabrication</small><h3>Michelmann Steel Construction Co.</h3><a href="tel:+12172220555">(217) 222-0555</a></div>
+      <div class="body">
+        <ul>
+          <li>Structural steel</li><li>Miscellaneous steel</li><li>Tanks &amp; bins</li><li>Stairs &amp; handrails</li>
+          <li>Joists &amp; deck</li><li>Highway guardrail</li><li>Pipe bollards</li><li>Plain warehouse steel</li>
+        </ul>
+        <p>Plus steel detailing, engineering and print-making services.</p>
+        <a class="btn btn-d" href="mailto:info@michelmann.us?subject=Steel%20fabrication%20quote" style="align-self:flex-start">Get a steel quote</a>
+      </div>
+    </div>
+    <div class="div">
+      <div class="top"><small>Distribution &amp; fabrication</small><h3>Mid-States Door &amp; Hardware</h3><a href="tel:+12172220558">(217) 222-0558</a></div>
+      <div class="body">
+        <ul>
+          <li>Hollow metal doors &amp; frames</li><li>Wood doors</li><li>Door hardware</li><li>Bathroom partitions</li>
+          <li>Access panels</li><li>Fire extinguishers</li>
+        </ul>
+        <p>UL-certified facility for in-house fabrication to code, and an Architectural Hardware Consultant (AHC) on staff to work with your architect.</p>
+        <div class="brands"><span>Schlage</span><span>Von Duprin</span><span>LCN</span><span>Corbin Russwin</span><span>Yale</span><span>Norton</span><span>Hager</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="soft" id="walk-in"><div class="wrap walkin">
+  <div>
+    <h2>Need steel today? Walk in.</h2>
+    <p class="sub" style="margin-bottom:24px">No project is too small or too large. We keep a range of steel in stock and can order anything we don't have.</p>
+    <div class="stock">
+      <div class="shape"><svg viewBox="0 0 40 40" fill="currentColor"><path d="M6 6h28v5H22v18h12v5H6v-5h12V11H6z"/></svg>Wide flange beams</div>
+      <div class="shape"><svg viewBox="0 0 40 40" fill="currentColor"><path d="M8 6h24v5H13v18h19v5H8z"/></svg>Channels</div>
+      <div class="shape"><svg viewBox="0 0 40 40" fill="currentColor"><path d="M8 6h5v23h21v5H8z"/></svg>Angles</div>
+      <div class="shape"><svg viewBox="0 0 40 40" fill="currentColor"><rect x="6" y="16" width="28" height="8"/></svg>Bar stock</div>
+      <div class="shape"><svg viewBox="0 0 40 40" fill="currentColor"><rect x="5" y="13" width="30" height="14" rx="1"/></svg>Plate stock</div>
+      <div class="shape"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="5"><rect x="9" y="9" width="22" height="22"/></svg>Square tube</div>
+      <div class="shape"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="5"><circle cx="20" cy="20" r="11"/></svg>Pipe</div>
+      <a class="shape" href="mailto:info@michelmann.us?subject=Steel%20availability" style="text-decoration:none;background:var(--steel);color:#fff;border-color:var(--steel)"><svg viewBox="0 0 40 40" fill="none" stroke="#f2a516" stroke-width="4" stroke-linecap="round"><path d="M20 10v20M10 20h20"/></svg>Something else? Ask</a>
+    </div>
+  </div>
+  <div class="hoursbox">
+    <h3>Walk-in sales</h3>
+    <p>Our doors are always open during business hours. Ask for Kent Stevenson — or anyone on staff.</p>
+    <div class="big">Mon–Fri · 8:00 a.m.–4:30 p.m.</div>
+    <div class="cta"><a class="btn btn-a" href="tel:+12172220555">Call before you come</a><a class="btn btn-o" href="https://www.google.com/maps/search/?api=1&query=137+N+2nd+St+Quincy+IL+62301" target="_blank" rel="noopener">Directions</a></div>
+  </div>
+</div></section>
+
+<section id="story"><div class="wrap">
+  <h2>Five generations in Quincy</h2>
+  <p class="sub">It started in 1865, when Prussian immigrant J.H. Michelmann opened a small boiler and tank shop — with firm ideas about quality, on-time delivery and service.</p>
+  <div class="story">
+    <div class="gen"><small>1865 · Founder</small><b>J.H. Michelmann</b><span>Boiler &amp; tank shop</span></div>
+    <div class="gen"><small>2nd generation</small><b>William F. Gerdes Sr.</b><span>Son-in-law</span></div>
+    <div class="gen"><small>3rd generation</small><b>Clarence A. Gerdes</b><span>Grandson</span></div>
+    <div class="gen"><small>4th generation</small><b>William F. Gerdes III</b><span>Great-grandson</span></div>
+    <div class="gen now"><small>Today</small><b>Laura Gerdes Ehrhart</b><span>Great-great-granddaughter</span></div>
+  </div>
+</div></section>
+
+<section class="soft" id="contact"><div class="wrap contact">
+  <div class="cc" style="background:#fff">
+    <h3>Contact us</h3>
+    <address>137 North Second Street, Quincy, IL<br>Mail: PO Box 609, Quincy, IL 62306-0609</address>
+    <div class="row"><span>Michelmann Steel</span><a href="tel:+12172220555">(217) 222-0555</a></div>
+    <div class="row"><span>Mid-States Door &amp; Hardware</span><a href="tel:+12172220558">(217) 222-0558</a></div>
+    <div class="row"><span>Email</span><a href="mailto:info@michelmann.us">info@michelmann.us</a></div>
+  </div>
+  <div class="map"><iframe title="Map to Michelmann" loading="lazy" src="https://www.google.com/maps?q=137+N+2nd+St,+Quincy,+IL&output=embed"></iframe></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© The Michelmann Companies · 137 North Second Street, Quincy, IL</span><span>Concept by Reywen Design</span></div></footer>
+<div class="mbar"><a class="btn btn-a" href="tel:+12172220555">Call steel</a><a class="btn btn-d" href="tel:+12172220558">Call doors</a></div>
+</body>
+</html>
